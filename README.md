@@ -2,4 +2,6 @@
 
 # spaceship-titanic
 Kaggle project. DATA-3402 UTA spring 2024
+<div>
 https://www.kaggle.com/competitions/spaceship-titanic
+</div>
