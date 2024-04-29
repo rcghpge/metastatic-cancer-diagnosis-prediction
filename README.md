@@ -1,6 +1,6 @@
 ![UTA Data Science](https://github.com/rcghpge/spaceship-titanic/blob/main/UTA-DataScience-Logo.png)
 
-# stage-4-cancer-diagnosis
+# metastatic-cancer-diagnosis-prediction
 Kaggle challenge. DATA-3402 UTA spring 2024
 <div>
 Kaggle link:
