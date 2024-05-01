@@ -8,7 +8,7 @@ This repository holds an attempt to apply machine learning to metastatic cancer 
 
 ## Overview
 
-The task, as defined on the Kaggle challenge page, is designed to help discover whether disparate treatments exist and to understand the drivers of biases, such as demographic and societal factors as well as establishing a benchmark for metastatic cancer diagnosis prediction. The approach in this repository formulates the problem as a binary classification task (cancer or no cancer), using machine learning models with categorical and numerical features as input. The task is to assess whether the likelihood of a patient’s diagnosis period being less than 90 days is predictable using characteristics and information about the patient from training and testing data. The overall goal is to determine whether a patient was diagnosed with metastatic cancer within 90 Days of screening. The primary goal of building these models is to detect relationships between demographics of a patient with the likelihood of getting timely treatment. The secondary goal is to see if environmental hazards impact proper diagnosis and treatment. For this challenge, I compared the performance of 3 different models. The best model was able to predict whether a patient was diagnosed with any cancer within 90 days of screening with a 100% accuracy. At the time of writing, the best performance on Kaggle of this metric is 18%.
+The task, as defined on the Kaggle challenge page, is designed to help discover whether disparate treatments exist and to understand the drivers of biases, such as demographic and societal factors as well as establishing a benchmark for metastatic cancer diagnosis prediction. The approach in this repository formulates the problem as a binary classification task (cancer or no cancer), using machine learning models with categorical and numerical features as input. The task is to assess whether the likelihood of a patient’s diagnosis period being less than 90 days is predictable using characteristics and information about the patient from training and testing data. The overall goal is to determine whether a patient was diagnosed with metastatic cancer within 90 Days of screening. The primary goal of building these models is to detect relationships between demographics of a patient with the likelihood of getting timely treatment. The secondary goal is to see if environmental hazards impact proper diagnosis and treatment. For this challenge, I compared the performance of 3 different models. The best model was able to predict whether a patient was diagnosed with any cancer within 90 days of screening with a ~81% accuracy for model 1 and ~81.01% for model 2. At the time of writing, the best performance on Kaggle leaderboards of this metric is 82.1%.
 
 ## Summary of Workdone
 
@@ -17,8 +17,8 @@ The task, as defined on the Kaggle challenge page, is designed to help discover 
 * Data:
   * Context: The dataset is from 2015-2018 of patients who went to get screened for breast cancer. See Kaggle challenge main page for more information.
   * Type: 
-    * Input: patient data (12,906 patients, , CSV file:  -> diagnosis
-    * Input: CSV file of features, output: cancer/no cancer in last column.
+  * Input: aggregate data (~12,906 patients) , CSV file: train.csv, test.csv -> diagnosis
+  * Input: CSV file of features, output: cancer/no cancer in last column.
   * Size: How much data?
   * Instances (Train, Test, Validation Split): how many data points? Ex: 1000 patients for training, 200 for testing, none for validation
 
