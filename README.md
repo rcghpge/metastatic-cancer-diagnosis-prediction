@@ -35,7 +35,7 @@ Show a few visualization of the data and say a few words about what you see.
 Benchmarking my 2 models was challenging but insightful and I hope this helps someone. Initial insights into the 2 models you can see how the 2 models are learning from the training and testing data. I started training, and testing on the data, but did not go into fine-tuning which apparently could have taken over 100 hours with parameters I was going to train on 1 of my 2 models. Sheesh lol. Below are some of the intial insights into the 2 models.</p>
 
 <div>
-<img src="GBD Model Learning Curve.png" width="500" height="500">
+<img src="GBD Model Learning Curve.png" width="500" height="500"><img src="XGBoost Model Learning Curve.png" with="500" height="500">
 </div>
 
 ### Problem Formulation
