@@ -1,6 +1,6 @@
-<p align="center">
-  ![](UTA-DataScience-Logo.png)
-</p>
+<div align="center">
+![](UTA-DataScience-Logo.png)
+</div>
 
 ![](UTA-DataScience-Logo.png)
 
