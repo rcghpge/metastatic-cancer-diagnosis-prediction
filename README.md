@@ -3,7 +3,7 @@
 </p>
 
 
-# Kaggle Challenge: Metastatic Cancer Diagnosis Prediction. 2 ML Models for Benchmarking
+# Kaggle Challenge: Metastatic Cancer Diagnosis Prediction. Building and Benchmarking ML Models
 
 This repository holds an attempt to apply machine learning to metastatic cancer diagnosis predictions using data from the WiDS Datathon 2024 Challenge #1 Kaggle challenge that ran from 1/9/2024 - 3/1/2024.
 
