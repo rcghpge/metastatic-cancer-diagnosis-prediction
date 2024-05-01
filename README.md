@@ -1,5 +1,10 @@
 
-<center>![](UTA-DataScience-Logo.png)</center>
+![](UTA-DataScience-Logo.png)
+
+<p align="center">
+  <img src="UTA-DataScience-Logo.png" />
+</p>
+
 
 # Kaggle Challenge: Metastatic Cancer Diagnosis Prediction
 
