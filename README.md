@@ -1,6 +1,3 @@
-
-![](UTA-DataScience-Logo.png)
-
 <p align="center">
   <img src="UTA-DataScience-Logo.png" />
 </p>
