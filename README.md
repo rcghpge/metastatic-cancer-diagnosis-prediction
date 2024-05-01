@@ -56,11 +56,11 @@ Show a few visualization of the data and say a few words about what you see.
 
 ### Conclusions
 
-* The Gradient Boosting model works better than XGBoost and Stochastic Gradient Descent models. I would have liked to try out GPU training, testing, and fine-tuning to see if it is faster. Though I've read mostly TensorFlow utilizes GPU compute and also that Scikit-Learn libraries do not have support for GPU compute. Though I could be wrong about this. The training on my machine was done on CPU and RAM memory.
+* The Gradient Boosting model worked the best for me compared to the XGBoost and Stochastic Gradient Descent models. I would have liked to try out GPU training, testing, and fine-tuning to see if it is faster. Though I've read mostly TensorFlow utilizes GPU compute and also that Scikit-Learn libraries do not have support for GPU compute. Though I could be wrong about this. The training on my machine was done on CPU and RAM memory.
 
 * In the little time window I had before submitting my project for this class, I was browsing through the Kaggle main challenge page. Other participants of the challenge I saw trained and tested over 20 models. The most popular model I noticed reading through the various approaches were CatBoost and utilizing Optuna for hyperparameter fine-tuning.
 
-* Concluding thoughts, I believe in leveraging AI, machine learning, and at that deep learning for healthcare and better our everyday lives. This is essentially why I selected this challenge as a project for my data science computer programming course this semester.
+* Concluding thoughts, there is a lot of work that can be done from this project. It could even stand as a benchmark on its own alone. Hopefully this will be of some use to someone.
 
 ### Future Work
 
@@ -75,7 +75,8 @@ Show a few visualization of the data and say a few words about what you see.
 ### Overview of files in repository
 
   * eda-preprocessing.ipynb: Notebook 1 for prepping data for ML training, testing, and validation.
-  * ml-inference-submission.ipynb: Notebook 2 for ML model training, testing, validation, selection, and submission of model predictions.
+  * ml-inference-submission.ipynb: Notebook 2 for ML model training, testing, validation, selection, and submission of model predictions. Original model.
+  * ml-inference-submission2.ipynb: Notebook 3 for ML model training, testing, validation, selection, and submission of model predictions. Model 2.
   * README.md: Breakdown of Github repository and its files.
   * test.csv: original test data from Kaggle 
   * training.csv: original training data from Kaggle
