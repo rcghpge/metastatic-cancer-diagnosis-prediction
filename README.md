@@ -40,7 +40,7 @@ Benchmarking my 2 models was challenging but insightful and I hope this helps so
 
 ##### Gradient Boosting Learning Curve
 <div>
-<img src="GBD Model Learning Curve.png" width="500" height="500">
+<img src="https://github.com/rcghpge/metastatic-cancer-diagnosis-prediction/blob/main/images/GBD%20Model%20Learning%20Curve.png" width="500" height="500">
 </div>
 
 ### Problem Formulation
