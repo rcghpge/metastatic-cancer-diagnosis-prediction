@@ -1,17 +1,3 @@
-<!-- Include this style tag in the README.md file -->
-<style>
-  /* For desktop */
-  @media (min-width: 768px) {
-    .custom-text { font-size: 16px; }
-  }
-
-  /* For mobile */
-  @media (max-width: 767px) {
-    .custom-text { font-size: 14px; }
-  }
-</style>
-
-
 <p align="center">
   <img src="UTA-DataScience-Logo.png" />
 </p>
