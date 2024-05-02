@@ -119,7 +119,7 @@ Benchmarking my 2 models was challenging but insightful and I hope this helps so
 ## Citations & Acknowledgements
 * This Kaggle notebook was fairly helpful for me. Thanks Dee Dee. I also want to thank my professor Dr. Farbin and my graduate TA's Vineesha and Kunal for answering my questions throughout the semester.
 * Kaggle contributors:
-* - dee dee @ddosad Kaggle notebook: https://www.kaggle.com/code/ddosad/wids-data-exploration-ml-starter
+* dee dee @ddosad Kaggle notebook: https://www.kaggle.com/code/ddosad/wids-data-exploration-ml-starter
 
  
 *If you found this project helpful. Feel free to connect with me. Just ping me here on Github or my socials. Cheers.
