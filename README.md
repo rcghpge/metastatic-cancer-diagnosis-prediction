@@ -38,6 +38,31 @@ Benchmarking my 2 models was challenging but insightful and I hope this helps so
 <img src="GBD Model Learning Curve.png" width="500" height="500"><img src="XGBoost Model Learning Curve.png" with="450" height="450">
 </div>
 
+<div class="row">
+  <div class="column">
+    <img src="GBD Model Learning Curve.png" alt="BM 1" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="XGBoost Model Learning Curve.png" alt="BM 2" style="width:100%">
+  </div>
+</div>
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+
 ### Problem Formulation
 
 * How can machine learning be leveraged to aid in cancer research and treatment?
