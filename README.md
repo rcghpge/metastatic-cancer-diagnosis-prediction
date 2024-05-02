@@ -11,19 +11,19 @@ This repository holds an attempt to apply machine learning to metastatic cancer 
 
 ## Overview
 
-The task, as defined on the Kaggle challenge page, is designed to help discover whether disparate treatments exist and to understand the drivers of biases, such as demographic and societal factors as well as establishing a benchmark for metastatic cancer diagnosis prediction. The approach in this repository formulates the problem as a binary classification task (cancer or no cancer), using machine learning models with categorical and numerical features as input. The task is to assess whether the likelihood of a patient’s diagnosis period being less than 90 days is predictable using characteristics and information about the patient from training and testing data. The overall goal is to determine whether a patient was diagnosed with metastatic cancer within 90 Days of screening. The primary goal of building these models is to detect relationships between demographics of a patient with the likelihood of getting timely treatment. The secondary goal is to see if environmental hazards impact proper diagnosis and treatment. For this challenge, I compared the performance of 3 different models. The best model was able to predict whether a patient was diagnosed with any cancer within 90 days of screening with a ~81% accuracy for model 1 and ~81.01% for model 2. At the time of writing, the best performance on Kaggle leaderboards of this metric is 82.1%.
+The challenge, as defined on the Kaggle challenge page, is designed to help discover whether disparate treatments exist and to understand the drivers of biases, such as demographic and societal factors as well as establishing a benchmark for metastatic cancer diagnosis prediction. The approach in this repository formulates the problem as a binary classification task (cancer or no cancer), using machine learning models with categorical and numerical features as input. The task is to assess whether the likelihood of a patient’s diagnosis period being less than 90 days is predictable using characteristics and information about the patient from training and testing data. The overall goal is to determine whether a patient was diagnosed with metastatic cancer within 90 Days of screening. The primary goal of building these models is to detect relationships between demographics of a patient with the likelihood of getting timely treatment. The secondary goal is to see if environmental hazards impact proper diagnosis and treatment. For this challenge, I compared the performance of 3 different models. The best models that were able to predict whether a patient was diagnosed with any cancer within 90 days of screening scored at ~81% accuracy for model 1 and ~81.01% for model 2. At the time of writing, the best performance on the Kaggle leaderboards of this metric is 82.1%.
 
 ## Summary of Workdone
 
 ### Data
 
 * Data:
-  * Context: The dataset is from 2015-2018 of patients who went to get screened for breast cancer. See Kaggle challenge main page for more information.
+  * Context: The dataset is from 2015-2018 of patients who went to get screened for breast cancer. See Kaggle page for more information.
   * Type: 
   * Input: aggregate data (~12,906 patients) , CSV file: train.csv, test.csv -> diagnosis
-  * Input: CSV file of features, output: cancer/no cancer in last column.
-  * Size: How much data?
-  * Instances (Train, Test, Validation Split): how many data points? Ex: 1000 patients for training, 200 for testing, none for validation
+  * Input: CSV file of patients and agreggate features, output: cancer/no cancer in last column.
+  * Size: The original training and testing data was about 15MB. Including the training and testing data that I made, in total about 80 MB of training and testing data.
+  * Instances (Train, Test, Validation Split): I originally split the training and testing data into 2 categories: Pandas and Scikit-Learn. I ran into issues with data shape. This should be work for future work.
 
 #### Preprocessing / Clean up
 
@@ -46,25 +46,25 @@ Benchmarking my 2 models was challenging but insightful and I hope this helps so
 ### Problem Formulation
 
 * How can machine learning be leveraged to aid in cancer research and treatment?
-  * Pretrain a ML model for that leverages AI & machine learning for cancer research, treatment, diagnosis, and prediction
+  * Pretrain a ML model that leverages AI & machine learning for cancer research, treatment, diagnosis, and prediction
   * Models
-    * The 3 models I tested were XGBoost, Stochastic Gradient Descent, and Gradient Boosting.
+    * The 3 models I tested were XGBoost, Stochastic Gradient Descent, and Gradient Boosting. I settled on 2 final models.
 
 ### Training
 
   * Training was done in a Jupyter Notebook environment utlizing Ubuntu version 22.04 LTS. This was on a Dell Workstation Precision 5510 laptop.
-  * Most of the training went smooth. However fine-tuning the selected model taking over 3+ hours.
-  * Deciding on which training and test sets from the data was straightforward when looking at the ROC curves and measuring for AUC as well as cross-validating model accuracy.
-  * After selecting the best training and test sets. Training the model was fairly straightforward.
-  * Some difficulities I ran into were at Notebook #1 for data preprocessing and at Notebook #2 with fine tuning the model I selected. Be sure to see notes in the notebooks.
+  * Most of the training went smooth. However fine-tuning the selected model was taking over 3+ hours.
+  * Deciding on which training and test sets from the data was straightforward when looking at the ROC curves and measuring for AUC as well as cross-validating model accuracy. I wanted to note that I ran into issues with data shape for the training and testing data.
+  * My main issues here was prepocessing, fitting, and fine-tuning.
   * Some light hyperparamter fine-tuning was done. Though was crunched for time on project final submission.
 
 ### Performance Comparison
 
-* Clearly define the key performance metric(s).
-* Show/compare results in one table.
-* Show one (or few) visualization(s) of results, for example ROC curves.
-* The 3 models I trained, tested, cross-validated on the training data, the best performance metrics was the Gradient Boosting Model. I
+* All 3 models performed fairly well. The best performing model seemed to be Gradient Boosting. You can see below from the ROC curve graph. I 3wasn't happy with 81.01% accuracy. If I had more time on the project, I would have pushed for 85% to over 90% accuracy.
+
+#### ROC Curve Graph
+
+<img scr="Pandas Training Data ROC AUC Curve.png" width="400" height="400" >
 
 
 ### Conclusions
