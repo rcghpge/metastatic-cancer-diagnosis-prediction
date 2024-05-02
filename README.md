@@ -60,7 +60,7 @@ Benchmarking my 2 models was challenging but insightful and I hope this helps so
 
 ### Performance Comparison
 
-* All 3 models performed fairly well. The best performing model seemed to be Gradient Boosting. You can see below from the ROC curve graph. I 3wasn't happy with 81.01% accuracy. If I had more time on the project, I would have pushed for 85% to over 90% accuracy.
+* All 3 models performed fairly well. The best performing model seemed to be Gradient Boosting. You can see below from the ROC curve graph. I wasn't happy with 81.01% accuracy and because of my issues with data shape, I believe this affected the peformance of the models. If I had more time on the project, I would have pushed for 85% to over 90% accuracy.
 
 #### ROC Curve Graph
 
@@ -68,29 +68,29 @@ Benchmarking my 2 models was challenging but insightful and I hope this helps so
 
 ### Conclusions
 
-* The Gradient Boosting model worked the best for me compared to the XGBoost and Stochastic Gradient Descent models. I would have liked to try out GPU training, testing, and fine-tuning to see if it is faster. Though I've read mostly TensorFlow utilizes GPU compute and also that Scikit-Learn libraries do not have support for GPU compute. Though I could be wrong about this. The training on my machine was done on CPU and RAM memory.
+* The Gradient Boosting model worked the best for me compared to the XGBoost and Stochastic Gradient Descent models. I would have liked to try out GPU training, testing, and fine-tuning to see if it is faster. Though I've read mostly TensorFlow utilizes GPU compute and also that Scikit-Learn libraries do not have support for GPU compute. Though I just getting into machine learning. The training on my machine was done on CPU and RAM memory.
 
-* In the little time window I had before submitting my project for this class, I was browsing through the Kaggle main challenge page. Other participants of the challenge I saw trained and tested over 20 models. The most popular model I noticed reading through the various approaches were CatBoost and utilizing Optuna for hyperparameter fine-tuning.
+* In the little time window I had before submitting my project for this class, I was browsing through the Kaggle challenge page. Other participants of the challenge I saw trained and tested over 20 models. The most popular model I noticed reading through the various approaches were CatBoost and utilizing Optuna for fine-tuning.
 
-* Concluding thoughts, there is a lot of work that can be done from this project. It could even stand as a benchmark on its own alone. Hopefully this will be of some use to someone.
+* My concluding thoughts are that there is a lot of work that can be done from this challenge. This project alone could stand for benchmarking. Hopefully this will be of some use to someone.
 
 ### Future Work
 
-* This machine learning project I hope can contribute to AI for healthcare, helping people, and society. I think for this project, the next thing I would do is look into why NO2 was so pronounced in my training sets. I came across an article about this from Harvard School of Public Health. See link: https://www.hsph.harvard.edu/news/press-releases/outdoor-air-pollution-may-increase-non-lung-cancer-risk-in-older-adults/ . In notebook 1 see Heatmap section. From a simple Google search, I found that the most prominent source of NO2 are internal combustion engines: cars. This may be worth looking into. Something else to look into is socioeconomic status. That feature came up as important in the model I selected for training. Another contributor found the metastatic cancer diagnosis codes to be the strongest predictive feature in their model. This should also be looked into as well. More future work also I would say is more exploratory data analysis on the data. I did not extensively look into drawing more insights from the data such as race/ethnicity, age, commute time, education, and location. For more context you can see other contributors notebooks on Kaggle about the data to give you more insight and context. I believe there are alot of studies and use cases for this specific challenge. Cancer, viruses - COVID-19 recently in 2020, public health studies. There are many use cases for this model.
+* I think the next thing I would do is look into why NO2 was so pronounced in my training data. See Heatmap section of Notebook #1. From a simple Google search, I found that the most prominent source of NO2 are internal combustion engines - motor vehicles. This may be worth looking into. Something else to look into is socioeconomic status. That feature came up as important while I was training, testing, and fine-tuning my models. Another contributor found the metastatic cancer diagnosis codes to be the strongest predictive feature in their model. This should also be looked into as well. Another feature that was a surprise to me white fine-tuning was geographical location feature. I don't know why but this came up as another predictive feature as i was training and fine-tuning. I did not fully look into the aggregrate of the data. There are many predictive features from the data that can be utilized for benchmarking in machine learning. For more context you can see other contributors notebooks on Kaggle to give you a better idea. I believe there are alot of studies and use cases in this challenge. Cancer, viruses (OVID-19 recently in 2020), public health studies. Benchmarking datasets, and ML models for practical applications. There are many use cases for this model.
   
 ## How to reproduce results
 
 * To replicate my exact results:
-   * Jupyter Notebooks: Do not run every cell in each notebook. For Notebook #1: import libraries and software packages, load and read in the training and test data, one-hot encode the categorical features with Pandas and Scikit-Learn, make sure to drop columns that are not needed, run the cells that take care of null values. You are doing this for the training data and the testing data. But if you want you can choose to one-hot encode once for the training data and once for the testing data. For Notebook #2: now that you have your training and testing data, notebook 2 is very straightforward. I tried to make it easy to understand. Notebook #2 has the final model I selected with the window of time that I had. Here you can really build from there. Notebook #1 on the other hand is for building robust data for training and testing.
-   * Windows, Mac users, VS Code, etc: You can probably take bits and pieces of Notebook #1 and #2 for your usage purposes. There are many environments out there for machine learning. Some use Google Colab, Jupyter Notebooks, Ubuntu, VS Code. I noticed the hot trend in machine learning these days are VS Code and GPUs.
+   * Jupyter Notebooks: Do not run every cell in each notebook. For Notebook #1: import libraries and software packages, load and read in the training and testing data, one-hot encode the categorical features with Pandas and Scikit-Learn, make sure to drop columns that are not needed, run the cells that take care of null values. You are doing this for the training data and the testing data. But if you want you can choose to one-hot encode once for the training data and once for the testing data. For Notebook #2: This is my original model. I tried to make it easy to understand, but I ran into issues with data shape of the training and testing data. So Notebook #2 is the original model trained, fitted, and fine-tuned only on partial data mainly the Scikit-Learn training data. Model 1 notebook, you can use that as an original benchmarking model. In Notebook #3 I went back and trained, fitted, tested, and fine-tuned Model 2 on the aggregrate training data. Or at least I tried. The results are show there. Notebook #1 makes for a solid benchmark for building robust data for training and testing.
+   * Windows, Mac users, VS Code, etc: You can probably take bits and pieces of Notebook #1, #2, and #3 for your usage purposes. There are many environments out there for machine learning. Some use Google Colab, Jupyter Notebooks, Ubuntu, VS Code. I noticed the hot trend in machine learning these days are VS Code and GPUs.
 
 ### Overview of files in repository
 
-  * eda-preprocessing.ipynb: Notebook 1 for prepping data for ML training, testing, and validation.
-  * ml-inference-submission.ipynb: Notebook 2 for ML model training, testing, validation, selection, and submission of model predictions. Original model.
+  * eda-preprocessing.ipynb: Notebook 1 for prepping aggregate data for ML training, fitting, testing, validation, and fine-tuning.
+  * ml-inference-submission.ipynb: Notebook 2 for ML model training, testing, validation, selection, and submission of model predictions. Original model - Model 1.
   * ml-inference-submission2.ipynb: Notebook 3 for ML model training, testing, validation, selection, and submission of model predictions. Model 2.
   * README.md: Breakdown of Github repository and its files.
-  * test.csv: original test data from Kaggle 
+  * test.csv: original testing data from Kaggle 
   * training.csv: original training data from Kaggle
   * sample_submission.csv: sample submission file for Kaggle challenge
   * pandas-test.csv: testing data from notebook 1 using Pandas one-hot encoding methods
@@ -98,7 +98,7 @@ Benchmarking my 2 models was challenging but insightful and I hope this helps so
   * scikitlearn-test.csv: testing data from notebook 1 using Scikit-Learn's one-hot encoding methods
   * scikitlearn-train.csv: training data from notebook 1 using Scikit-Learn's one-hot encoding methods
 
-  * Note: You can skip Notebook #1 and directly download the training and testing data from this repo and use Notebook #2 for ML model training, testing, exploration.
+  * Note: You can skip Notebook #1 and directly download the training and testing data from this repo and use Notebook #2 and #3 for model training, testing, exploration.
 
 
 ### Software Setup
@@ -106,23 +106,25 @@ Benchmarking my 2 models was challenging but insightful and I hope this helps so
 * Software libraries and packages needed: Scikit-Learn, Numpy, Seaborn, Pandas, Matplotlib, Math, XGBoost, IPython, and tabulate.
 * From the libraries you can import the specific packages listed at the top of each notebook that you will need. If your machine does not have it check online. Most if not all of them have documentation for installing on your machine.
 
+* I came across a library called Imbalance Learn. Its a library for dealing with imbalance in datasets for machine learning.
+* See link: https://imbalanced-learn.org/stable/
+
 ### Data
 
-* The original training and testing data can be downloaded from the Kaggle main challenge page. See link at the top. Browse over to data, and you can download them from there. The main idea in preprocessing the provided data is you are benchmarking numerical and categorical features in a way for binary classification of predicting cancer or no cancer.
+* The original training and testing data can be downloaded from the Kaggle challenge page. See link at the top. Browse over to data, and you can download them from there. The main idea in preprocessing the data is that you are benchmarking numerical and categorical features in a way for binary classification in predicting using machine learning.
 
 ### Training
 
-* The most imporant thing I learned during this challenge was having the correct training and testing data. From there you divide up your training and testing data. Training data is for training and validating the model/s. Once you have decided on the most optimal model and best parameters, test your final model with the best parameters to make your final predictions.
+* The most imporant thing I learned during this challenge was having the correct training and testing data. From there you divide up your training and testing data. Training data is for training and validating the models. Once you have decided on the most optimal model and best parameters, fit, test, and fine-tune your final model with the best parameters to make your best predictions.
 
 #### Performance Evaluation
 
-* For performance evaluation, you can run multiple models in 1 go or 1 at a time. I chose 3 in 1 go and selected the best I thought would give the best and most accurate prediction. Check the graphs and cross-validation accuracy scores to help on selecting a final model. Use hyperparameter tuning to fine-tune your final model for best results.
+* For performance evaluation, you can run multiple models in 1 go or 1 at a time. I chose 3 in 1 go and ended with the 2 best models I thought would give the best and most accurate prediction. Check the graphs and cross-validation accuracy scores to help on selecting a final model. Fine-tune your models for best results.
 
 ## Citations & Acknowledgements
 * This Kaggle notebook was fairly helpful for me. Thanks Dee Dee. I also want to thank my professor Dr. Farbin and my graduate TA's Vineesha and Kunal for answering my questions throughout the semester.
 * Kaggle contributors:
 * - dee dee @ddosad Kaggle notebook: https://www.kaggle.com/code/ddosad/wids-data-exploration-ml-starter
-* Harvard School of Public Health: https://www.hsph.harvard.edu/
 
  
 *If you found this project helpful. Feel free to connect with me. Just ping me here on Github or my socials. Cheers.
