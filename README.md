@@ -64,7 +64,7 @@ Benchmarking my 2 models was challenging but insightful and I hope this helps so
 
 #### ROC Curve Graph
 
-<div><img scr="Pandas Training Data ROC AUC Curve.png" width="400" height="400"></div>
+<div><img src="Pandas Training Data ROC AUC Curve.png" width="400" height="400"></div>
 
 
 ### Conclusions
