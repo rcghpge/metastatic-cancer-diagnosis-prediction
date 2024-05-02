@@ -66,7 +66,6 @@ Benchmarking my 2 models was challenging but insightful and I hope this helps so
 
 <p><div><img src="Pandas Training Data ROC AUC Curve.png" width="600" height="500"></div></p>
 
-
 ### Conclusions
 
 * The Gradient Boosting model worked the best for me compared to the XGBoost and Stochastic Gradient Descent models. I would have liked to try out GPU training, testing, and fine-tuning to see if it is faster. Though I've read mostly TensorFlow utilizes GPU compute and also that Scikit-Learn libraries do not have support for GPU compute. Though I could be wrong about this. The training on my machine was done on CPU and RAM memory.
