@@ -1,7 +1,23 @@
+<!-- Include this style tag in the README.md file -->
+<style>
+  /* For desktop */
+  @media (min-width: 768px) {
+    .custom-text { font-size: 16px; }
+  }
+
+  /* For mobile */
+  @media (max-width: 767px) {
+    .custom-text { font-size: 14px; }
+  }
+</style>
+
+
 <p align="center">
   <img src="UTA-DataScience-Logo.png" />
 </p>
 
+<!-- Use this div with the custom class around your text -->
+<div class="custom-text">
 
 # Kaggle Challenge: Metastatic Cancer Diagnosis Prediction. Building and Benchmarking ML Models
 
@@ -124,6 +140,7 @@ Benchmarking my 2 models was challenging but insightful and I hope this helps so
  
 If you found this project helpful. Feel free to connect with me. Just ping me here on Github or my socials. Cheers =)
 
+</div>
 
 
 
