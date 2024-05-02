@@ -122,7 +122,7 @@ Benchmarking my 2 models was challenging but insightful and I hope this helps so
 * dee dee @ddosad Kaggle notebook: https://www.kaggle.com/code/ddosad/wids-data-exploration-ml-starter
 
  
-*If you found this project helpful. Feel free to connect with me. Just ping me here on Github or my socials. Cheers.
+If you found this project helpful. Feel free to connect with me. Just ping me here on Github or my socials. Cheers =)
 
 
 
