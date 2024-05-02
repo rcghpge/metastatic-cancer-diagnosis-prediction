@@ -24,7 +24,7 @@ The challenge, as defined on the Kaggle challenge page, is designed to help disc
   * Type: 
   * Input: aggregate data (~12,906 patients) , CSV file: train.csv, test.csv -> diagnosis
   * Input: CSV file of patients and agreggate features, output: cancer/no cancer in last column.
-  * Size: The original training and testing data was about 15MB. Including the training and testing data that I made, in total about 80 MB of training and testing data.
+  * Size: The original training and testing data was about 15MB. Including the training and testing data that I made, total training and testing data can be about ~80 MB.
   * Instances (Train, Test, Validation Split): I originally split the training and testing data into 2 categories: Pandas and Scikit-Learn. I ran into issues with data shape. This should be work for future work.
 
 #### Preprocessing / Clean up
@@ -33,7 +33,7 @@ The challenge, as defined on the Kaggle challenge page, is designed to help disc
 
 #### Data Visualization
 <p>
-Show a few visualization of the data and say a few words about what you see.
+
 Benchmarking my 2 models was challenging but insightful and I hope this helps someone. Initial insights into the 2 models you can see how the 2 models are learning from the training and testing data. I started training, and testing on the data, but did not go into fine-tuning which apparently could have taken over 100 hours with parameters I was going to train on 1 of my 2 models. Sheesh lol. Below are some of the intial insights into the 2 models.</p>
 
 ##### XGBoost Learning Curve
@@ -95,7 +95,7 @@ Benchmarking my 2 models was challenging but insightful and I hope this helps so
   * README.md: Breakdown of Github repository and files.
   
 
-  * Note: You can skip Notebook #1 and directly download the training and testing data from this repo and use Notebook #2 and #3 for model training, testing, exploration.
+  * Note: You can skip Notebook #1 and directly download the training and testing data from Kaggle and use Notebook #2 and #3 for model training, testing, exploration.
 
 
 ### Software Setup
@@ -103,12 +103,12 @@ Benchmarking my 2 models was challenging but insightful and I hope this helps so
 * Software libraries and packages needed: Scikit-Learn, Numpy, Seaborn, Pandas, Matplotlib, Math, XGBoost, IPython, and tabulate.
 * From the libraries you can import the specific packages listed at the top of each notebook that you will need. If your machine does not have it check online. Most if not all of them have documentation for installing on your machine.
 
-* I came across a library called Imbalance Learn. Its a library for dealing with imbalance in datasets for machine learning.
+* I came across a library called Imbalance Learn while I was preproccesing the training and testing data. Its a library for dealing with imbalance in datasets.
 * See link: https://imbalanced-learn.org/stable/
 
 ### Data
 
-* The original training and testing data can be downloaded from the Kaggle challenge page. See link at the top. Browse over to data, and you can download them from there. The main idea in preprocessing the data is that you are benchmarking numerical and categorical features in a way for binary classification in predicting using machine learning.
+* The original training and testing data can be downloaded from the Kaggle link above. Browse over to data, and you can download them from there. The main idea in preprocessing the data is that you are benchmarking numerical and categorical features for robust predictive binary classification in machine learning.
 
 ### Training
 
@@ -120,11 +120,11 @@ Benchmarking my 2 models was challenging but insightful and I hope this helps so
 
 ## Citations & Acknowledgements
 * This Kaggle notebook was fairly helpful for me. Thanks Dee Dee. I also want to thank my professor Dr. Farbin and my graduate TA's Vineesha and Kunal for answering my questions throughout the semester.
-* Kaggle contributors:
+* Kaggle challenge contributors:
 * dee dee @ddosad Kaggle notebook: https://www.kaggle.com/code/ddosad/wids-data-exploration-ml-starter
 
  
-If you found this project helpful. Feel free to connect with me. Just ping me here on Github or my socials. Cheers =)
+If you found this project helpful. Feel free to connect with me. Just ping me here on Github or on socials. Cheers =)
 
 </div>
 
