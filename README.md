@@ -64,7 +64,7 @@ Benchmarking my 2 models was challenging but insightful and I hope this helps so
 
 #### ROC Curve Graph
 
-<p><div><img src="Pandas Training Data ROC AUC Curve.png" width="600" height="500"></div></p>
+<p><div><img src="https://github.com/rcghpge/metastatic-cancer-diagnosis-prediction/blob/main/images/Pandas%20Training%20Data%20ROC%20AUC%20Curve.png" width="600" height="500"></div></p>
 
 ### Conclusions
 
@@ -86,17 +86,12 @@ Benchmarking my 2 models was challenging but insightful and I hope this helps so
 
 ### Overview of files in repository
 
+  * The repository has 2 folders images and notebooks. The notebooks folder contains the 3 notebooks below.
   * eda-preprocessing.ipynb: Notebook 1 for prepping aggregate data for ML training, fitting, testing, validation, and fine-tuning.
   * ml-inference-submission.ipynb: Notebook 2 for ML model training, testing, validation, selection, and submission of model predictions. Original model - Model 1.
   * ml-inference-submission2.ipynb: Notebook 3 for ML model training, testing, validation, selection, and submission of model predictions. Model 2.
-  * README.md: Breakdown of Github repository and its files.
-  * test.csv: original testing data from Kaggle 
-  * training.csv: original training data from Kaggle
-  * sample_submission.csv: sample submission file for Kaggle challenge
-  * pandas-test.csv: testing data from notebook 1 using Pandas one-hot encoding methods
-  * pandas-train.csv: training data from notebook 1 using Pandas one-hot encoding methods
-  * scikitlearn-test.csv: testing data from notebook 1 using Scikit-Learn's one-hot encoding methods
-  * scikitlearn-train.csv: training data from notebook 1 using Scikit-Learn's one-hot encoding methods
+  * README.md: Breakdown of Github repository and files.
+  
 
   * Note: You can skip Notebook #1 and directly download the training and testing data from this repo and use Notebook #2 and #3 for model training, testing, exploration.
 
