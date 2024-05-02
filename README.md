@@ -5,7 +5,7 @@
 <!-- Use this div with the custom class around your text -->
 <div class="custom-text">
 
-# Kaggle Challenge: Metastatic Cancer Diagnosis Prediction. Building and Benchmarking ML Models
+## Kaggle Challenge: Metastatic Cancer Diagnosis Prediction. Building and Benchmarking ML Models
 
 This repository holds an attempt to apply machine learning to metastatic cancer diagnosis predictions using data from the WiDS Datathon 2024 Challenge #1 Kaggle challenge that ran from 1/9/2024 - 3/1/2024.
 
