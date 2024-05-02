@@ -35,8 +35,8 @@ Show a few visualization of the data and say a few words about what you see.
 Benchmarking my 2 models was challenging but insightful and I hope this helps someone. Initial insights into the 2 models you can see how the 2 models are learning from the training and testing data. I started training, and testing on the data, but did not go into fine-tuning which apparently could have taken over 100 hours with parameters I was going to train on 1 of my 2 models. Sheesh lol. Below are some of the intial insights into the 2 models.</p>
 
 ##### XGBoost Learning Curve
-<div><img src="XGBoost Model Learning Curve.png" with="450" height="450"></div>
-### Problem Formulation
+<div><img src="https://github.com/rcghpge/metastatic-cancer-diagnosis-prediction/blob/main/images/XGBoost%20Model%20Learning%20Curve.png" with="450" height="450"></div>
+
 
 ##### Gradient Boosting Learning Curve
 <div>
