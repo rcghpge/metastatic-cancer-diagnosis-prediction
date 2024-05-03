@@ -34,7 +34,7 @@ This is a breakdown that tested three different models to see how well they coul
 
 #### Data Visualization
 <p>
-Think of benchmarking like comparing two video games to see which one is better. I played both games (trained the models) to see how they perform. It was a bit tough but really cool to learn from. I didn't get to the part where you make the game run perfectly (fine-tuning the models) because it would have taken ages—like over 100 hours! But even without that, I learned a lot about how each game works and gets better as you play (how models learn from data). 
+Benchmarking is like comparing two video games to see which one is better. I played both games (trained the models) to see how they perform. It was a bit tough but really cool to learn from. I didn't get to the part where you make the game run perfectly (fine-tuning the models) because it would have taken ages—like over 100 hours! But even without that, I learned a lot about how each game works and gets better as you play (how models learn from data). 
 </p>
 
 ##### XGBoost Learning Curve
