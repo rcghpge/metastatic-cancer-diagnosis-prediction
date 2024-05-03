@@ -19,12 +19,12 @@ The challenge, as defined on the Kaggle challenge page, is designed to help disc
 
 ### Data
 
-Context: The dataset is from 2015-2018 of patients who went to get screened for breast cancer. See Kaggle page for more information.
-Type:
-Input: aggregate data (~12,906 patients) , CSV file: train.csv, test.csv -> diagnosis
-Input: CSV file of patients and agreggate features, output: cancer/no cancer in last column.
-Size: The original training and testing data was about 15MB. Including the training and testing data that I made, total training and testing data can be about ~80 MB.
-Instances (Train, Test, Validation Split): I originally split the training and testing data into 2 categories: Pandas and Scikit-Learn. I ran into issues with data shape. This should be work for future work.
+* Context: The dataset is from 2015-2018 of patients who went to get screened for breast cancer. See Kaggle page for more information.
+  * Type:
+    * Input: aggregate data (~12,906 patients) , CSV file: train.csv, test.csv -> diagnosis
+    * Input: CSV file of patients and agreggate features, output: cancer/no cancer in last column.
+  * Size: The original training and testing data was about 15MB. Including the training and testing data that I made, total training and testing data can be about ~80 MB.
+  * Instances (Train, Test, Validation Split): I originally split the training and testing data into 2 categories: Pandas and Scikit-Learn. I ran into issues with data shape. This should be work for future work.
 
 #### Preprocessing / Clean up
 
