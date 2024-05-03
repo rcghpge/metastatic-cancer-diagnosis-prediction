@@ -20,7 +20,12 @@ This is a breakdown that tested three different models to see how well they coul
 
 ### Data
 
-Imagine you have a big folder of health checkup forms from 2015 to 2018 for people getting tested for breast cancer. It's like a huge list with around 12,906 names on it. This list is saved in two files, kind of like Excel sheets, named train.csv and test.csv. The last part of each line in these sheets tells you if the person has cancer or not. The whole folder was about 15MB at first, but after adding some more stuff I did, it's now around 80MB—pretty hefty. I tried to organize this folder in two different ways using some computer tools (Pandas and Scikit-Learn), but it got a bit messy. That will need to be sorted out. Hope that makes sense
+Context: The dataset is from 2015-2018 of patients who went to get screened for breast cancer. See Kaggle page for more information.
+Type:
+Input: aggregate data (~12,906 patients) , CSV file: train.csv, test.csv -> diagnosis
+Input: CSV file of patients and agreggate features, output: cancer/no cancer in last column.
+Size: The original training and testing data was about 15MB. Including the training and testing data that I made, total training and testing data can be about ~80 MB.
+Instances (Train, Test, Validation Split): I originally split the training and testing data into 2 categories: Pandas and Scikit-Learn. I ran into issues with data shape. This should be work for future work.
 
 #### Preprocessing / Clean up
 
@@ -28,7 +33,7 @@ Imagine you have a big folder of health checkup forms from 2015 to 2018 for peop
 
 #### Data Visualization
 <p>
-Benchmarking is like comparing video games to see which one is better. I played the games (trained the models) to see how they perform. It was a bit tough but really cool to learn from. I didn't get to the part where you make the game run perfectly (fine-tuning the models) because it would have taken ages—like over 100 hours! But even without that, I learned a lot about how each game works and gets better as you play (how models learn from data). 
+Benchmarking my 2 models was challenging but insightful and I hope this helps someone. Initial insights into the 2 models you can see how the 2 models are learning from the training and testing data. I started training, and testing on the data, but did not go into fine-tuning which apparently could have taken over 100 hours with parameters I was going to train on 1 of my 2 models. Sheesh lol. Below are some of the intial insights into the 2 models.
 </p>
 
 ##### XGBoost Learning Curve
