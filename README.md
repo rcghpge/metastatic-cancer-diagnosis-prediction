@@ -20,13 +20,7 @@ This is a breakdown that tested three different models to see how well they coul
 
 ### Data
 
-* Data:
-  * Context: The dataset is from 2015-2018 of patients who went to get screened for breast cancer. See Kaggle page for more information.
-  * Type: 
-  * Input: aggregate data (~12,906 patients) , CSV file: train.csv, test.csv -> diagnosis
-  * Input: CSV file of patients and agreggate features, output: cancer/no cancer in last column.
-  * Size: The original training and testing data was about 15MB. Including the training and testing data that I made, total training and testing data can be about ~80 MB.
-  * Instances (Train, Test, Validation Split): I originally split the training and testing data into 2 categories: Pandas and Scikit-Learn. I ran into issues with data shape. This should be work for future work.
+Alright, here's the simple version: Imagine you have a big folder of health checkup forms from 2015 to 2018 for people getting tested for breast cancer. It's like a huge list with around 12,906 names on it. This list is saved in two files, kind of like Excel sheets, named train.csv and test.csv. The last part of each line in these sheets tells you if the person has cancer or not. The whole folder was about 15MB at first, but after adding some more stuff I did, it's now around 80MB—pretty hefty! I tried to organize this folder in two different ways using some computer tools (Pandas and Scikit-Learn), but it got a bit messy. I'll need to sort that out later. Hope that makes sense!
 
 #### Preprocessing / Clean up
 
