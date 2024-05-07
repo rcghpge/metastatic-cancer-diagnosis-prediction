@@ -91,9 +91,15 @@ Benchmarking my two models was both challenging and insightful. During testing, 
 
 ## How to reproduce results
 
-* To replicate my exact results:
-   * Jupyter Notebooks: Do not run every cell in each notebook. For Notebook #1: import libraries and software packages, load and read in the training and testing data, one-hot encode the categorical features with Pandas and Scikit-Learn, make sure to drop columns that are not needed, run the cells that take care of null values. You are doing this for the training data and the testing data. But if you want you can choose to one-hot encode once for the training data and once for the testing data. For Notebook #2: This is my original model. I tried to make it easy to understand, but I ran into issues with data shape of the training and testing data. So Notebook #2 is the original model trained, fitted, and fine-tuned only on partial data mainly the Scikit-Learn training data. Model 1 notebook, you can use that as an original benchmarking model. In Notebook #3 I went back and trained, fitted, tested, and fine-tuned Model 2 on the aggregrate training data. Or at least I tried. The results are show there. Notebook #1 makes for a solid benchmark for building robust data for training and testing.
-   * Windows, Mac users, VS Code, etc: You can probably take bits and pieces of Notebook #1, #2, and #3 for your usage purposes. There are many environments out there for machine learning. Some use Google Colab, Jupyter Notebooks, Ubuntu, VS Code. I noticed the hot trend in machine learning these days are VS Code and GPUs.
+To replicate my results:
+
+ * **Jupyter Notebooks**: Do not run every cell in each notebook. For Notebook #1, import the necessary libraries, load the training and testing data, one-hot encode categorical features, drop unnecessary columns, and handle null values. This applies to both the training and testing data, though you can choose to one-hot encode once for each dataset.
+
+ * In **Notebook #2**, I trained, fitted, and fine-tuned the original model using partial data, mainly from Scikit-Learn's training set. It can serve as a basic benchmarking model.
+
+ * **Notebook #3** focuses on training, fitting, and fine-tuning Model 2 using the complete training data. This notebook can be used to evaluate the performance of the model. However, I encountered issues with data shape during this process.
+
+ * **Windows, Mac, and Other Environments**: You can adapt the content from Notebooks #1, #2, and #3 for your setup, whether you're using Google Colab, Jupyter Notebooks, Ubuntu, or VS Code. Different machine learning environments offer various features; recent trends favor VS Code and GPUs for enhanced performance.
 
 ### Overview of files in repository
 
