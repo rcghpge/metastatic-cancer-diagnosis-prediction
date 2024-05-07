@@ -93,7 +93,7 @@ Benchmarking my two models was both challenging and insightful. During testing, 
 
 To replicate my results:
 
- * **Jupyter Notebooks**: Do not run every cell in each notebook. For Notebook #1, import the necessary libraries, load the training and testing data, one-hot encode categorical features, drop unnecessary columns, and handle null values. This applies to both the training and testing data, though you can choose to one-hot encode once for each dataset.
+ * **Jupyter Notebooks**: Do not run every cell in each notebook. For **Notebook #1**:import the necessary libraries, load the training and testing data, one-hot encode categorical features, drop unnecessary columns, and handle null values. This applies to both the training and testing data, though you can choose to one-hot encode once for each dataset.
 
  * In **Notebook #2**, I trained, fitted, and fine-tuned the original model using partial data, mainly from Scikit-Learn's training set. It can serve as a basic benchmarking model.
 
