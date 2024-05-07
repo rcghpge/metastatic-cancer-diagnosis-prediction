@@ -13,7 +13,11 @@ This repository holds an attempt to apply machine learning to metastatic cancer 
 
 ## Overview
 
-The challenge, as defined on the Kaggle challenge page, is designed to help discover whether disparate treatments exist and to understand the drivers of biases, such as demographic and societal factors as well as establishing a benchmark for metastatic cancer diagnosis prediction. The approach in this repository formulates the problem as a binary classification task (cancer or no cancer), using machine learning models with categorical and numerical features as input. The task is to assess whether the likelihood of a patient’s diagnosis period being less than 90 days is predictable using characteristics and information about the patient from training and testing data. The overall goal is to determine whether a patient was diagnosed with metastatic cancer or not within 90 Days of screening. The primary goal of building these models is to detect relationships between demographics of a patient with the likelihood of getting timely treatment. The secondary goal is to see if environmental hazards impact proper diagnosis and treatment. For this challenge, I compared the performance of 3 different models. The best models that were able to predict whether a patient was diagnosed with any cancer or not within 90 days of screening scored at around ~81% accuracy for model 1 and ~81.01% for model 2. At the time of writing, the best performance on the Kaggle leaderboards of this metric is 82.1%.
+The Kaggle challenge aims to identify biases in metastatic cancer diagnosis, focusing on factors like demographics and societal issues. The task in this repository is to predict whether a patient's diagnosis occurs within 90 days, using a binary classification model with various categorical and numerical features.
+
+The primary objective is to examine if the model can identify relationships between patient demographics and timely cancer diagnosis. A secondary objective is to explore the impact of environmental factors on diagnosis and treatment.
+
+Three models were compared to achieve this. The top-performing models achieved accuracy rates of approximately 81% and 81.01%, respectively. Currently, the best performance on the Kaggle leaderboard for this challenge stands at 82.1%.
 
 ## Summary of Workdone
 
