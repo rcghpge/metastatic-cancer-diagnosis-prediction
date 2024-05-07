@@ -57,11 +57,11 @@ Benchmarking my two models was both challenging and insightful. During testing, 
 
 ### Training
 
-  * Training was done in a Jupyter Notebook environment utlizing Ubuntu version 22.04 LTS. This was on a Dell Workstation Precision 5510 laptop.
-  * Most of the training went smooth. However fine-tuning the selected model was taking over 3+ hours.
-  * Deciding on which training and test sets from the data was straightforward when looking at the ROC curves and measuring for AUC as well as cross-validating model accuracy. I wanted to note that I ran into issues with data shape for the training and testing data.
-  * My main issues here was prepocessing, fitting, and fine-tuning.
-  * Some light hyperparamter fine-tuning was done. Though was crunched for time on project final submission.
+* Training took place in a Jupyter Notebook on Ubuntu 22.04 LTS, using a Dell Workstation Precision 5510 laptop.
+* Most training went smoothly, but fine-tuning the selected model took over three hours.
+* The training and test sets were straightforward to decide on by examining ROC curves and measuring AUC, while also cross-validating model accuracy. However, I encountered issues with data shape.
+* The main challenges were preprocessing, fitting, and fine-tuning.
+* Some light hyperparameter fine-tuning was attempted, but I was pressed for time due to the project deadline.
 
 ### Performance Comparison
 
