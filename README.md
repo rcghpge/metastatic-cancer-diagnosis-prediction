@@ -36,7 +36,7 @@ Three models were compared to achieve this. The top-performing models achieved a
 
 #### Data Visualization
 <p>
-Benchmarking my 2 models was challenging but insightful and I hope this helps someone. Initial insights into the 2 models you can see how 2 of the 3 models I selected are learning from the training and testing data. I started training, and testing on the data, but did not go into fine-tuning which apparently could have taken over 100 hours with parameters I was going to train on 1 of the models. Sheesh lol. Below are some of the intial insights 2 of the 3 models.
+Benchmarking my two models was both challenging and insightful. During testing, I observed how two of my three chosen models were learning from the training and testing data. I didn't fine-tune extensively, which could have taken over 100 hours with the parameters I considered. Here are some of the initial insights from the two models.
 </p>
 
 ##### XGBoost Learning Curve
