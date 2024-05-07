@@ -81,8 +81,14 @@ Benchmarking my two models was both challenging and insightful. During testing, 
 
 ### Future Work
 
-* I think the next thing I would do is look into why NO2 was so pronounced in my training data. See Heatmap section of Notebook #1. From a simple Google search, I found that the most prominent source of NO2 are internal combustion engines - motor vehicles. This may be worth looking into. Something else to look into is socioeconomic status. That feature came up as important while I was training, testing, and fine-tuning my models. Another contributor found the metastatic cancer diagnosis codes to be the strongest predictive feature in their model. This should also be looked into as well. Another feature that was a surprise to me white fine-tuning was geographical location feature. I don't know why but this came up as another predictive feature as i was training and fine-tuning. I did not fully look into the aggregrate of the data. There are many predictive features from the data that can be utilized for benchmarking in machine learning. For more context you can see other contributors notebooks on Kaggle to give you a better idea. I believe there are alot of studies and use cases in this challenge. Cancer, viruses (COVID-19 recently in 2020), public health studies. Benchmarking datasets, and ML models for practical applications. There are many use cases for this model.
-  
+* The next step is to investigate why NO2 (nitrogen dioxide) appears prominently in my training data (see the Heatmap section of Notebook #1). A Google search suggests that internal combustion engines, like those in motor vehicles, are a major source of NO2, indicating this could be worth exploring.
+
+* Socioeconomic status also emerged as a significant feature during training, testing, and fine-tuning, suggesting it could influence outcomes. Additionally, another contributor found that metastatic cancer diagnosis codes were the strongest predictive feature, which should be further analyzed.
+
+* An unexpected feature that gained importance during fine-tuning was geographical location. I'm not entirely sure why, but it might be linked to environmental or regional factors.
+
+* While I haven't deeply analyzed the aggregate data, these various predictive features suggest there are many angles to explore for machine learning benchmarking. If you need more insights, you can refer to other contributors' notebooks on Kaggle. This challenge has can extend research in medicine, public health, among many other fields of study, illustrating the broad applicability of these models.
+
 ## How to reproduce results
 
 * To replicate my exact results:
