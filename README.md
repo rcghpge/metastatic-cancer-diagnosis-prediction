@@ -73,7 +73,7 @@ Benchmarking my two models was both challenging and insightful. During testing, 
 
 ### Conclusions
 
-* The Gradient Boosting model worked the best for me compared to the XGBoost and Stochastic Gradient Descent models. I would have liked to try out GPU training, testing, and fine-tuning to see if it is faster. Though I've read mostly TensorFlow utilizes GPU compute and also that Scikit-Learn libraries do not have support for GPU compute. Though I just getting into machine learning. The training on my machine was done on CPU and RAM memory.
+* The Gradient Boosting model worked the best for me compared to the XGBoost and Stochastic Gradient Descent models. I would have liked to try out GPU training, testing, and fine-tuning to see if it is faster. Though I've read mostly TensorFlow utilizes GPU compute and also that Scikit-Learn libraries do not have support for GPU compute. Though I am just getting into machine learning. The training on my machine was done on CPU and RAM memory.
 
 * In the little time window I had before submitting my project for this class, I was browsing through the Kaggle challenge page. Other participants of the challenge I saw trained and tested over 20 models. The most popular model I noticed reading through the various approaches were CatBoost and utilizing Optuna for fine-tuning.
 
