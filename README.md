@@ -87,7 +87,7 @@ Benchmarking my two models was both challenging and insightful. During testing, 
 
 * An unexpected feature that gained importance during fine-tuning was geographical location. I'm not entirely sure why, but it might be linked to environmental or regional factors.
 
-* While I haven't deeply analyzed the aggregate data, these various predictive features suggest there are many angles to explore for machine learning benchmarking. If you need more insights, you can refer to other contributors' notebooks on Kaggle. This challenge has can extend research in medicine, public health, among many other fields of study, illustrating the broad applicability of these models.
+* While I haven't deeply analyzed the aggregate data, these various predictive features suggest there are many angles to explore for machine learning benchmarking. If you need more insights, you can refer to other contributors' notebooks on Kaggle. This challenge can extend research in medicine, public health, among many other fields of study, illustrating the broad applicability of these models.
 
 ## How to reproduce results
 
